@@ -1,0 +1,171 @@
+@import './colors';
+.main-body {
+    font-family: 'Raleway';
+    margin: auto;
+
+    &__row {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+
+.cv,
+.portfolio {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    position: relative;
+
+    p {
+        position: absolute;
+        top: 40%;
+        left: 40%;
+
+        a {
+            text-decoration: none;
+            color: $almost-black;
+            padding-bottom: 5px;
+            background: linear-gradient(0deg, currentcolor, currentcolor) bottom center no-repeat;
+            background-size: 0px 3px;
+            transition: 0.5s;
+            text-decoration: none;
+
+            &:hover {
+                background-size: 100% 3px;
+            }
+        }
+    }
+}
+.cv {
+    float: left;
+    background-color: $pink;
+
+    &__line {
+        position: absolute;
+        width: 0;
+        height: 3px;
+        transition: width 1s;
+
+        &--light {
+            $cv-line-light: $light-green;                
+            
+            top: 55%;
+            background: $cv-line-light;
+        }
+        &--dark {
+            $cv-line-dark: $almost-black;
+
+            top: 56%;
+            background: $cv-line-dark;
+        }
+    }
+}
+.portfolio {
+    float: right;
+    background-color: $portfolio;
+
+    &__line {
+        position: absolute;
+        right: 0;
+        width: 0;
+        height: 3px;
+        transition: width 1s;
+        transition-delay: 1s;
+
+        &--light {
+            $portfolio-line-light: $light-green;                
+            
+            top: 37%;
+            background: $portfolio-line-light;
+        }
+        &--dark {
+            $portfolio-line-dark: $almost-black;
+
+            top: 36%;
+            background: $portfolio-line-dark;
+        }
+    }
+}
+.contacts {
+    $contacts-background-color: $almost-black;
+    $contacts-color: $portfolio;
+    
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: $white;
+
+    &__arrow {
+        height: 15px;
+        background-color: $contacts-background-color;
+        width: 80px;
+        margin: auto;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        cursor: pointer;
+
+        .fa-angle-up {
+            padding-top: 4px;
+        }
+    }
+
+    &__info {
+        height: 30px;
+        padding-top: 15px;            
+        text-transform: uppercase;
+        background-color: $contacts-background-color;
+        overflow: hidden;
+        transition: height 0.5s ease;
+        -moz-transition: height 0.5s ease;
+        -ms-transition: height 0.5s ease;
+        -o-transition: height 0.5s ease;
+        -webkit-transition: height 0.5s ease;
+
+        &-hidden {
+            text-transform: lowercase;
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 10px;
+
+            a {
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }  
+    
+    .slided {
+        height: 70px;
+    }
+
+    .fa-arrow-down{
+        transform: rotate(0deg);
+        transition: transform 1s linear;
+    }
+    
+    .fa-arrow-down.open{
+        transform: rotate(180deg);
+        transition: transform 1s linear;
+    }
+}
+}
+
+@media (max-width: 800px) { 
+.main-body {
+    .cv,
+    .portfolio {        
+        p {
+            font-size: 25px
+        }
+    }
+    .portfolio {        
+        p {
+            left: 15%;
+        }
+    }
+}
+}

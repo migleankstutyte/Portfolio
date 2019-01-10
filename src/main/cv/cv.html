@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Miglė Ankštutytė - CV</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <button onclick="topFunction()" id="myBtn" class="toTopButton" title="Go to top">
+        <i class="fas fa-angle-up fa-3x"></i>
+      </button>
+      <div class="row">
+        <div class="col-md-3 padding-right">
+          <aside>
+            <div class="nav-side-menu">
+              <div class="square d-none d-md-block">
+                <div class="x"></div>
+                <div class="text">
+                  <p class="name">Miglė Ankštutytė</p>
+                  <p class="profession">Front - End developer</p>
+                </div>
+                <div class="text-center">
+                  <a
+                    target="_blank"
+                    href="mailto:migle.ankstutyte@gmail.com"
+                    class="mail"
+                    title="Write me!"
+                  >
+                    <i class="fas fa-envelope fa-2x"></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/migle-ankstutyte/"
+                    class="linkedin"
+                    title="Look at my skills"
+                  >
+                    <i class="fab fa-linkedin-in fa-2x"></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/migleankstutyte"
+                    class="github"
+                    title="Look at my code"
+                  >
+                    <i class="fab fa-github fa-2x"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- toggle menu icon -->
+              <div id="toggle">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+              </div>
+              <!-- menu list -->
+              <div id="menu" class="menu-list">
+                <ul id="menu-content" class="menu-content collapse out"></ul>
+              </div>
+            </div>
+          </aside>
+        </div>
+        <div class="col-md-9 padding-left">
+          <a name="home"></a>
+
+          <!-- header -->
+          <button class="back-button" onclick="goBackMain()" type="button" aria-label="Back to the previous page">
+              <i class="fas fa-angle-right fa-3x"></i>
+          </button>   
+          <div class="dark header">
+            <div class="big">Let's Work Together</div>
+            <div class="text">Front - End developer</div>
+            <div class="text-center d-md-none d-lg-none">
+              <a
+                target="_blank"
+                href="mailto:migle.ankstutyte@gmail.com"
+                class="mail"
+                title="Write me!"
+              >
+                <i class="fas fa-envelope fa-2x"></i>
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/migle-ankstutyte/"
+                class="linkedin"
+                title="Look at my skills"
+              >
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </a>
+              <a
+                target="_blank"
+                href="https://github.com/migleankstutyte"
+                class="github"
+                title="Look at my code"
+              >
+                <i class="fab fa-github fa-2x"></i>
+              </a>
+            </div>
+            <button type="submit" class="btn goToForm">Hire Me!</button>
+          </div>
+          <!-- about me -->
+          <section class="aboutMe">
+            <a name="about"></a>
+
+            <div class="row">
+              <div class="col-lg-7 col-sm-12">
+                <h1 class="padding-top">About me</h1>
+                <hr class="pink-line" />
+                <div class="about">
+                  <p><span>Name: </span>Miglė Ankštutytė</p>
+                  <p><span>Email: </span>migle.ankstutyte@gmail.com</p>
+                  <p><span>Telephone: </span>+370 600 12722</p>
+                  <p><span>Address: </span>Vilnius, Lithuania</p>
+                </div>
+              </div>
+              <div class="col-lg-5 col-sm-6 photo">
+                <div>
+                  <img
+                    src="img/photo1.JPG"
+                    alt="dizainas"
+                    class="img-fluid d-none d-sm-block"
+                  />
+                </div>
+              </div>
+            </div>
+            <hr class="grey-line" />
+          </section>
+          <!-- education -->
+          <section class="education" id="education">
+            <a name="education"></a>
+            <h1>Education</h1>
+            <hr class="pink-line" />
+            <div class="timeline">
+              <div class="education-container">
+                <ul>
+                  <li class="first-li">
+                    <div class="box education-item">
+                      <p class="time">
+                        Business finance <span>@Vilnius college</span>
+                      </p>
+                      <p class="small">--- Bachelor degree ---</p>
+                      <p class="timeline-pink">Sep 2005 - Jun 2008</p>
+                      <p class="dot2"></p>
+                    </div>
+                  </li>
+                  <li >
+                    <div class="box-left education-item">
+                      <p class="time">
+                        Business finance <span>@Vilnius university</span>
+                      </p>
+                      <p class="small">--- Additional studies ---</p>
+                      <p class="timeline-pink">Sep 2008 - Jun 2009</p>
+                      <p class="dot2-left"></p>
+                    </div>
+                  </li>
+                  <li class="third-li">
+                    <div class="box education-item">
+                      <p class="time">
+                        Business finance <span>@Vilnius university</span>
+                      </p>
+                      <p class="small">--- Master degree ---</p>
+                      <p class="timeline-pink">Sep 2011 - Jun 2013</p>
+                      <p class="dot2"></p>
+                    </div>
+                  </li>
+                  <li >
+                    <div class="box-left education-item">
+                      <p class="time">Front - End development <span></span></p>
+                      <p class="small">--- Self learning ---</p>
+                      <p class="timeline-pink">Sep 2017 - till now</p>
+                      <p class="dot2-left"></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- online courses -->
+          <section class="darker">
+            <h1>Online courses</h1>
+            <hr class="pink-line" />
+            <div class="row example-centered padding-bottom">
+              <div class="col-sm-12">
+                <ul class="timeline" id="courses-timeline"></ul>
+              </div>
+            </div>
+          </section>
+          <!-- work experience -->
+          <section class="work">
+            <a name="work"></a>
+            <h1>Work Experience</h1>
+            <hr class="pink-line" />
+            <div class="timeline">
+              <div>
+                <ul>
+                  <li class="first-li">
+                    <div class="box work-item">
+                      <p class="time">Project manager</p>
+                      <span>@Ekonomikos mokymo centras</span>
+                      <p class="timeline-pink">Dec 2005 - Aug 2013</p>
+                      <p class="small">
+                        <label class="badge">Customer service</label>
+                        <label class="badge">Sales</label>
+                        <label class="badge"
+                          >Training and Development Planning</label
+                        >
+                      </p>
+                      <p class="dot2"></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box-left work-item">
+                      <p class="time">Audit assistant</p>
+                      <span>@Nepriklausomas auditas</span>
+                      <p class="timeline-pink">Feb 2013 - Feb 2014</p>
+                      <p class="small">
+                        <label class="badge">Accounting</label>
+                        <label class="badge">EU projects audits</label>
+                        <label class="badge">Audits</label>
+                        <label class="badge badge-small d-sm-none d-md-inline"
+                          >Customer service</label
+                        >
+                        <label class="badge">Procurement</label>
+                      </p>
+                      <p class="dot2-left"></p>
+                    </div>
+                  </li>
+                  <li class="third-li">
+                    <div class="box work-item">
+                      <p class="time">Service manager</p>
+                      <span>@Cleanex/Jutare</span>
+                      <p class="timeline-pink">Feb 2014 - Dec 2015</p>
+                      <p class="small">
+                        <label class="badge">Business growth</label>
+                        <label class="badge">Customer/supplier service</label>
+                        <label class="badge badge-small d-sm-none d-md-inline"
+                          >Team building</label
+                        >
+                        <label class="badge">Services</label>
+                        <label class="badge">Procurement</label>
+                      </p>
+                      <p class="dot2"></p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="box-left work-item">
+                      <p class="time">Senior statistician</p>
+                      <span>@Lietuvos bankas</span>
+                      <p class="timeline-pink">Jun 2016 - Oct 2018</p>
+                      <p class="small">
+                        <label class="badge">Customer service</label>
+                        <label class="badge">Reporting to ECB</label>
+                        <label class="badge">Checking, analyzing reports</label>
+                      </p>
+                      <p class="dot2-left"></p>
+                    </div>
+                  </li>
+                  <li class="third-li" style="margin-bottom: 50px;">
+                    <div class="box work-item">
+                      <p class="time">Sourcery Academy for Front-End</p>
+                      <span>@Devbridge group</span>
+                      <p class="timeline-pink">Oct 2018 - Dec 2018</p>
+                      <p class="small">
+                        <label class="badge">Webpack</label>
+                        <label class="badge">Gulp</label>
+                        <label class="badge">BEM methodology</label>
+                        <label class="badge">Agile methodology</label>
+                        <label class="badge">Accessibility standards</label>
+                      </p>
+                      <p class="dot2"></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- skills -->
+          <section class="darker">
+            <a name="skills"></a>
+            <h1>My Skills</h1>
+            <hr class="pink-line" />
+            <div role="tabpanel" class=" tab-pane" id="skill">
+              <div class="skill-section">
+                <div class="row skill">
+                  <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                      <span class="skill-name">HTML, CSS, Bootstrap</span>
+                      <div
+                        class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2 line"
+                      >
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 93%">
+                            <div class="dot d-98"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-2 text-left white">
+                        99%
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="skill-name">JavaScript, jQuery</span>
+                      <div
+                        class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2 line"
+                      >
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 50%">
+                            <div class="dot d-50"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-2 text-left white">
+                        50%
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="skill-name">Vue.js</span>
+                      <div
+                        class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2 line"
+                      >
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 30%">
+                            <div class="dot d-80"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-2 text-left white">
+                        30%
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12 right-column">
+                    <div class="row">
+                      <span class="skill-name">QA</span>
+                      <div
+                        class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2 line"
+                      >
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 30%">
+                            <div class="dot d-80"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-2 text-left white">
+                        30%
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="skill-name">SQL</span>
+                      <div
+                        class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2 line"
+                      >
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 20%">
+                            <div class="dot d-96"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-2 text-left white">
+                        20%
+                      </div>
+                    </div>
+                    <div class="row">
+                      <span class="skill-name">Wordpress, PHP</span>
+                      <div
+                        class="col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-10 col-xs-offset-2 line"
+                      >
+                        <div class="progress">
+                          <div class="progress-bar" style="width: 20%">
+                            <div class="dot d-96"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-2 text-left white">
+                        20%
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- counter -->
+          <section>
+            <div>
+              <div id="content">
+                <div class="bodytext">
+                  <h1>Studying and working:</h1>
+                  <hr class="pink-line" />
+                  <div class="row">
+                    <div class="col-sm-12"><div id="counter"></div></div>
+                  </div>
+                  <div class="row">
+                    <ul class="col-sm-12">
+                      <li class="blokas">Years</li>
+                      <li class="blokas">Months</li>
+                      <li class="blokas">Days</li>
+                      <li class="blokas">Hours</li>
+                      <li class="blokas">Minutes</li>
+                      <li class="blokas">Seconds</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="grey-line" />
+          </section>         
+
+          <!-- events -->
+          <section class="darker">
+            <a name="events"></a>
+            <h1>Events</h1>
+            <hr class="pink-line" />
+            <div class="container-fluid">
+              <div class="row example-centered padding-bottom">
+                <div class="col-sm-12">
+                  <ul
+                    class="timeline timeline-centered"
+                    id="events-timeline"
+                  ></ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contacts -->
+          <section class="contacts">
+            <a name="contacts"></a>
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <h2>Leave a Message</h2>
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control text"
+                      id="inputName"
+                      placeholder="Name*"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control text"
+                      id="exampleFormControlInput1"
+                      placeholder="Email*"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      type="text"
+                      class="form-control text big-cell"
+                      id="exampleFormControlTextarea1"
+                      rows="1"
+                      placeholder="Message*"
+                    ></textarea>
+                  </div>
+                  <div>
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="btn float-right"
+                      type="button"
+                      class="btn btn-primary"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    >
+                      Hire Me!
+                    </button>
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModalCenter"
+                      tabindex="-1"
+                      role="dialog"
+                      aria-labelledby="exampleModalCenterTitle"
+                      aria-hidden="true"
+                    >
+                      <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                      >
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">
+                              SORRY...
+                            </h5>
+                          </div>
+                          <div class="modal-body">
+                            <p>
+                              Contact form doesn't work yet. Still studying back
+                              - end.
+                            </p>
+                            <p>You can contact me via e-mail or telephone.</p>
+                          </div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="col-lg-6 col-sm-12 contacts-right">
+                <div class="contacts-row first">
+                  <div class="left-side">
+                    <img src="img/Resume_Home2.png" alt="Home" />
+                  </div>
+                  <div class="right-side">
+                    <p>Location</p>
+                    <p class="small">
+                      <a
+                        target="_blank"
+                        href="https://www.google.lt/maps/place/Vilnius/@54.6998479,24.9727564,10z/data=!3m1!4b1!4m5!3m4!1s0x46dd93fb5c6408f5:0x400d18c70e9dc40!8m2!3d54.6871555!4d25.2796514"
+                        class="mail"
+                        >Vilnius, Lithuania</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="contacts-row second">
+                  <div class="left-side">
+                    <img src="img/Resume_Home.png" alt="Adress" />
+                  </div>
+                  <div class="right-side">
+                    <p>Email</p>
+                    <p class="small">
+                      <a
+                        target="_blank"
+                        href="mailto:migle.ankstutyte@gmail.com"
+                        class="mail"
+                        title="Write me!"
+                        >migle.ankstutyte@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+                <div class="contacts-row third">
+                  <div class="left-side">
+                    <img src="img/Resume_Home_Telephone.png" alt="Telephone" />
+                  </div>
+                  <div class="right-side">
+                    <p>Telephone</p>
+                    <p class="small">+370 600 12722</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="grey-line-contacts" />
+          </section>
+
+          <!-- footer -->
+          <footer>
+            <div class="text-center">
+              <div class="text-center">
+                <div class="verticalLine">
+                  <a
+                    target="_blank"
+                    href="mailto:migle.ankstutyte@gmail.com"
+                    class="mail first"
+                    title="Write me!"
+                  >
+                    <i class="fas fa-envelope"></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/migle-ankstutyte/"
+                    class="linkedin second"
+                    title="Look at my skills"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/migleankstutyte"
+                    class="github"
+                    title="Look at my code"
+                  >
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="text-center footer-text">
+              <a href="http://www.reliablecounter.com" target="_blank">
+                <img
+                  src="https://www.reliablecounter.com/count.php?page=ankstutyte.lt2205706&digit=style/plain/10/&reloads=0"
+                  alt=""
+                  title=""
+                  border="0"
+                />
+              </a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" ></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="info.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

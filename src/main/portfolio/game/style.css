@@ -1,0 +1,24 @@
+div {
+    padding: 100px;
+}
+
+/* BACK BUTTON */
+
+.back-button {
+  background-color: initial;
+  border: none;
+  float: left;
+  padding: 50px 100px;
+  cursor: pointer;
+  outline: none;
+}
+
+.back-button .fa-angle-left {
+  color: #ff847c;
+}
+
+@media (max-width: 500px) {
+  .back-button {
+      padding: 10px 20px;
+  }
+}

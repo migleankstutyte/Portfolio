@@ -4,8 +4,8 @@ let autoprefixer = require('gulp-autoprefixer');
 let sourcemaps = require('gulp-sourcemaps');
 let rename = require('gulp-rename');
 
-let styleSRC = 'src/scss/**/*';
-let styleDIST = './dist/css/';
+let styleSRC = 'src/scss/**/*.scss';
+let styleDIST = './dist/main/css/';
 let styleWatch = 'src/scss/**/*.scss';
 
 let jsSRC = 'src/js/**/*';
@@ -19,6 +19,10 @@ let imagesWatch = 'src/images/**/*';
 let jsonSRC = 'src/json/**/*';
 let jsonDIST = './dist/json/';
 let jsonWatch = 'src/json/**/*';
+
+let folderSRC = 'src/main/**/*';
+let folderDIST = './dist/main/';
+let folderWatch = 'src/main/**/*';
 
 gulp.task('style', function(done){
     gulp.src(styleSRC)
@@ -56,13 +60,20 @@ gulp.task('json', function(done) {
         done()
 });
 
+gulp.task('folder', function(done) {
+    gulp.src(folderSRC)
+        .pipe(gulp.dest(folderDIST))
+        done()
+});
+
 gulp.task('watch', function() {
     gulp.watch(styleWatch, gulp.series('style'));
     gulp.watch(jsWatch, gulp.series('js'));
     gulp.watch(imagesWatch, gulp.series('images'));
     gulp.watch(jsonWatch, gulp.series('json'));
-})
+    gulp.watch(folderWatch, gulp.series('folder'));
+});
 
 gulp.task('default', 
-    gulp.series('style', 'js', 'images', 'json','watch')
+    gulp.series('style', 'js', 'images', 'json', 'folder','watch')
 );

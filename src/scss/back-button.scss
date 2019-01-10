@@ -1,0 +1,21 @@
+@import './colors';
+
+.back-button {
+    $ankle-color: $pink;
+
+    background-color: inherit;
+    border: none;
+    padding: 50px 100px 0 100px;
+    outline: none;
+    cursor: pointer;
+
+        .fa-angle-left {
+            color: $ankle-color;
+        }
+}
+
+@media (max-width: 500px) {
+    .back-button {
+        padding: 10px 20px;
+    }
+}
