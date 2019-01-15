@@ -176,9 +176,54 @@ function goBackMain() {
   window.location.href = "/../../../index.html";
 }
 
+// // on scroll show education section in transition and to opacity 1
+// window.addEventListener("scroll", function() {
+//   if(screen.width <= 576){
+//     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+//       let educationItem = document.querySelectorAll(".education-item");
+  
+//       for (let i = 0; i < educationItem.length; i++) {
+//         educationItem[i].classList.add("slideUp");
+//         educationItem[i].style.opacity = "1";
+//       }
+//     }
+//   } else {
+//     if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+//       let educationItem = document.querySelectorAll(".education-item");
+  
+//       for (let i = 0; i < educationItem.length; i++) {
+//         educationItem[i].classList.add("slideUp");
+//         educationItem[i].style.opacity = "1";
+//       }
+//     }
+//   }  
+// });
+// // on scroll show work section in transition and to opacity 1
+// window.addEventListener("scroll", function() {
+//   if(screen.width <= 576){
+//     if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
+//       let workItem = document.querySelectorAll(".work-item");
+  
+//       for (let i = 0; i < workItem.length; i++) {
+//         workItem[i].classList.add("slideUp");
+//         workItem[i].style.opacity = "1";
+//       }
+//     }
+//   } else {
+//     if (document.body.scrollTop > 1900 || document.documentElement.scrollTop > 1900) {
+//       let workItem = document.querySelectorAll(".work-item");
+  
+//       for (let i = 0; i < workItem.length; i++) {
+//         workItem[i].classList.add("slideUp");
+//         workItem[i].style.opacity = "1";
+//       }
+//     }
+//   }  
+// });
+
 // on scroll show education section in transition and to opacity 1
 window.addEventListener("scroll", function() {
-  if(screen.width <= 768){
+  if(screen.width <= 576){
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
       let educationItem = document.querySelectorAll(".education-item");
   
@@ -200,7 +245,7 @@ window.addEventListener("scroll", function() {
 });
 // on scroll show work section in transition and to opacity 1
 window.addEventListener("scroll", function() {
-  if(screen.width <= 768){
+  if(screen.width <= 576){
     if (document.body.scrollTop > 1300 || document.documentElement.scrollTop > 1300) {
       let workItem = document.querySelectorAll(".work-item");
   

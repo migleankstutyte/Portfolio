@@ -46,40 +46,46 @@ renderMenuList();
 // Render Online courses
 
 const coursesArr = [{
+  date: "2017.10.01",
   title: "Free Code Camp",
   href: "https://www.freecodecamp.org/",
   name: "Responsive Web Design",
-  certificatHref: ""
+  duration: ""
 },
 {
-  title: "Udemy",
-  href: "https://www.udemy.com/introduction-to-software-testing-or-software-qa/learn/v4/overview",
-  name: "Introduction to Software Testing or Software QA",
-  certificatHref: "https://www.udemy.com/certificate/UC-8EYI52LZ/"
-},
-{
-  title: "Udemy",
-  href: "https://www.udemy.com/software-testing-qa-fundamentals-and-manual-testing-concept/learn/v4/content",
-  name: "Software Testing, QA Testing, Manual Testing, SDLC, Test Plan",
-  certificatHref: "https://www.udemy.com/certificate/UC-J6JBZRY6/"
-},
-{
-  title: "Udemy",
-  href: "ttps://www.udemy.com/code-your-first-game/learn/v4/overview",
-  name: "Code Your First Game: Arcade Classic in JavaScript on Canvas",
-  certificatHref: "https://www.udemy.com/certificate/UC-6Q9W4PCK/"
-},
-{
-  title: "Udemy",
-  href: "https://www.udemy.com/modern-javascript-from-the-beginning/learn/v4/content",
-  name: "Modern JavaScript From The Beginning",
-  certificatHref: ""
-},
-{
+  date: "2018.06.25",
   title: "watch and code",
   href: "https://watchandcode.com/courses/enrolled/60264",
   name: "Practical JavaScript",
-  certificatHref: ""
+  duration: ""
+},
+{
+  date: "2018.07.03",
+  title: "Udemy",
+  href: "https://www.udemy.com/introduction-to-software-testing-or-software-qa/learn/v4/overview",
+  name: "Introduction to Software Testing or Software QA",
+  duration: "1 hour"
+},
+{
+  date: "2018.07.07",
+  title: "Udemy",
+  href: "https://www.udemy.com/software-testing-qa-fundamentals-and-manual-testing-concept/learn/v4/content",
+  name: "Software Testing, QA Testing, Manual Testing, SDLC, Test Plan",
+  duration: "2 hours"
+},
+{
+  date: "2018.07.15",
+  title: "Udemy",
+  href: "https://www.udemy.com/code-your-first-game/learn/v4/overview",
+  name: "Code Your First Game: Arcade Classic in JavaScript on Canvas",
+  duration: "2 hours"
+},
+{
+  date: "2018.07.25",
+  title: "Udemy",
+  href: "https://www.udemy.com/modern-javascript-from-the-beginning/learn/v4/content",
+  name: "Modern JavaScript From The Beginning",
+  duration: "21,5 hours"
 }
 ]
 
@@ -89,10 +95,7 @@ function renderOnlineCoursesList () {
       renderedOnlineCourses += `
       <li class="timeline-item">
         <div class="timeline-info">
-          <span>${coursesArr[i].title}</span>
-          <a href="${coursesArr[i].certificatHref}"
-            target="_blank" title="Certificate"> <img src="img/Pdf.png" alt="Pdf"/>
-          </a>
+          <div class="date">${coursesArr[i].date} <span class="title">| ${coursesArr[i].title} |</span><span clas="duration">${coursesArr[i].duration}</span></div>
         </div>
         <div class="timeline-marker"></div>
         <div class="timeline-content">
@@ -100,8 +103,7 @@ function renderOnlineCoursesList () {
           <h3 class="timeline-title">${coursesArr[i].name}</h3>
           </a>
         </div>
-      </li>
-      `
+      </li>      `
       
       document.querySelector("#courses-timeline").innerHTML = renderedOnlineCourses;
   }
@@ -109,7 +111,7 @@ function renderOnlineCoursesList () {
 
 renderOnlineCoursesList();
 
-// Render Online courses
+// Render Event list
 
 const eventsArr = [{
   date: "2017.11.04",

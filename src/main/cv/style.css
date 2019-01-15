@@ -676,6 +676,7 @@ span + span {
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   visibility: visible;
+  opacity: 1;
 }
 
 @keyframes slideUp {
@@ -795,8 +796,9 @@ span + span {
 
 .timeline-item .timeline-content h3 {
   color: white;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: unset;
+  margin: 0;
 }
 
 /*----- TIMELINE ITEM -----*/
@@ -818,11 +820,21 @@ span + span {
   white-space: nowrap;
 }
 
+.timeline-info div {
+  color: #ff847c;
+  font-size: 13px;
+}
 .timeline-info span {
   color: #ff847c;
+  font-size: 13px;
 }
-.timeline-info img {
-  width: 4%;
+
+.timeline-info .date .title,
+.timeline-info .date .duration {
+  color: #cfcfd1;
+  font-size: 10px;
+  text-transform: none;
+  letter-spacing: 1px;
 }
 
 /*----- TIMELINE MARKER -----*/
@@ -869,6 +881,7 @@ span + span {
 .timeline-content {
   padding-bottom: 20px;
 }
+
 .timeline-content a:hover,
 .timelline-info a:hover {
   text-decoration: none;
@@ -919,6 +932,7 @@ span + span {
   .timeline-centered .period .timeline-title {
     position: relative;
     left: -45px;
+        font-size: 15px;
   }
 }
 
@@ -1562,8 +1576,7 @@ aside .square a:hover,
     line-height: 45px;
     margin-bottom: 0;
     padding-top: 5px;
-    letter-spacing: 0;
-    padding-left: 0px;
+    padding-left: 10px;
   }
 }
 
@@ -1681,6 +1694,13 @@ aside .square a:hover,
   .work .timeline ul li div {
     padding: 5px 16px 0px 16px;
   }
+  .timeline-item .timeline-content h3 {
+    font-size: 17px;
+  }
+  .timeline-item .timeline-content .timeline-title {
+    font-size: 15px;
+  }
+
   /* counter */
   #counter span {
     border-radius: 5px;
