@@ -23,10 +23,6 @@ const arr = [{
 {
   menu: "Events",
   href: "#events"
-},
-{
-  menu: "Contacts",
-  href: "#contacts"
 }
 ]
 
@@ -62,30 +58,37 @@ const coursesArr = [{
 {
   date: "2018.07.03",
   title: "Udemy",
-  href: "https://www.udemy.com/introduction-to-software-testing-or-software-qa/learn/v4/overview",
+  href: "https://www.udemy.com/introduction-to-software-testing-or-software-qa/",
   name: "Introduction to Software Testing or Software QA",
   duration: "1 hour"
 },
 {
   date: "2018.07.07",
   title: "Udemy",
-  href: "https://www.udemy.com/software-testing-qa-fundamentals-and-manual-testing-concept/learn/v4/content",
+  href: "https://www.udemy.com/software-testing-qa-fundamentals-and-manual-testing-concept/",
   name: "Software Testing, QA Testing, Manual Testing, SDLC, Test Plan",
   duration: "2 hours"
 },
 {
   date: "2018.07.15",
   title: "Udemy",
-  href: "https://www.udemy.com/code-your-first-game/learn/v4/overview",
+  href: "https://www.udemy.com/code-your-first-game/",
   name: "Code Your First Game: Arcade Classic in JavaScript on Canvas",
   duration: "2 hours"
 },
 {
   date: "2018.07.25",
   title: "Udemy",
-  href: "https://www.udemy.com/modern-javascript-from-the-beginning/learn/v4/content",
+  href: "www.udemy.com/modern-javascript-from-the-beginning/",
   name: "Modern JavaScript From The Beginning",
   duration: "21,5 hours"
+},
+{
+  date: "2019.01.10",
+  title: "Udemy",
+  href: "https://www.udemy.com/react-redux/",
+  name: "Modern React with Redux [2019 Update]",
+  duration: "47.5 hours"
 }
 ]
 
@@ -168,6 +171,14 @@ const eventsArr = [{
 {
   date: "2018.12.19",
   title: "VGC Christmas Party"
+},
+{
+  date: "2019.01.24",
+  title: "Vilnius.js Meetup Janurary 2019"
+},
+{
+  date: "2019.01.29",
+  title: "Meetup #30: Getting your first job in IT"
 }
 ]
 

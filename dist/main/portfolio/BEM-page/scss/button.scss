@@ -1,0 +1,14 @@
+@import 'colors';
+
+button {
+  color: $white;
+  font-size: 13px;
+  border-radius: 4px;
+  background-color: $purple;
+  padding: 8px;
+  margin: 0;
+  cursor: pointer;
+  border-color: $purple;
+  min-height: 40px;
+  min-width: 130px;
+}

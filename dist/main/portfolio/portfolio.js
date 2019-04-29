@@ -28,13 +28,3 @@ function topFunction() {
 function goBackMain() {
   window.location.href = "/../../../index.html";
 }
-
-// // add portfolio items when page loads
-// window.addEventListener("load", function () {
-//     // find CV lines
-//       let projectsItem = document.querySelectorAll(".projects__item");
-//       for (let i = 0; i < projectsItem.length; i++) {
-//         console.log("test");
-//         projectsItem[i].style.width = "30%";
-//       }
-//   });

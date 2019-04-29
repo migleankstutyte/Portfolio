@@ -90,8 +90,7 @@ aside {
 
 .header {
   text-align: center;
-  padding-top: 63px;
-  padding-right: 78px;
+  padding: 60px 80px;
 }
 .header .text {
   color: #d8d8da;
@@ -110,6 +109,8 @@ aside {
   margin-top: 50px;
   width: 170px;
   margin-bottom: 115px;
+  background: #ff847c;
+  color: white;
 }
 
 /* aside */
@@ -323,6 +324,12 @@ aside nav p {
 }
 .photo {
   margin: auto;
+}
+.LI-profile-badge--big {
+  display: block;
+}
+.LI-profile-badge--small {
+  display: none;
 }
 
 .about {
@@ -669,6 +676,10 @@ span + span {
   border-radius: 10px;
 }
 
+.slideMobile {
+  visibility: visible;
+  opacity: 1;
+}
 
 .slideUp {
   animation-name: slideUp;
@@ -1001,109 +1012,11 @@ span + span {
   }
 }
 
-/* contacts */
-.contacts h2 {
-  letter-spacing: 0.5px;
-}
-form {
-  width: 77%;
-  padding-top: 17px;
-}
-form .text {
-  font-style: italic;
-  font-size: 14px;
-}
-form .big-cell {
-  margin-top: 19px;
-  padding-top: 5px;
-  padding-bottom: 76px;
-}
-form .form-group {
-  margin-bottom: 23px;
-}
-.form-control {
-  border: 1px solid #444649 !important;
-  border-radius: 0 !important;
-}
-form button,
-.header button,
-.portfolio .left button {
-  background-color: #ff847c !important;
-  color: #ffffff;
-}
-form button {
-  border-radius: 0 !important;
-  height: 33px;
-  width: 97px;
-}
-.contacts form .btn {
-  line-height: 0px;
-}
-.contacts .contacts-right {
-  padding-left: 46px;
-  padding-top: 11px;
-  margin-left: -17px;
-  border-left: 1px grey solid;
-}
-.contacts .left-side {
-  float: left;
-}
-.contacts .right-side {
-  float: right;
-  width: 80%;
-  padding-left: 16px;
-}
-.contacts .right-side p {
-  letter-spacing: 1.5px;
-}
-
-.contacts .first .right-side .small {
-  letter-spacing: -0.3px;
-}
-.contacts .second .right-side .small {
-  letter-spacing: 0.4px;
-}
-.contacts .third .right-side .small {
-  letter-spacing: 0.6px;
-}
-.contacts .contacts-right .first .right-side {
-  line-height: 19px;
-}
-.contacts .contacts-right .third .right-side {
-  line-height: 21px;
-}
-.contacts .contacts-right .first .left-side {
-  padding-top: 11px;
-  padding-left: 3px;
-}
-.contacts .contacts-right .third .left-side {
-  padding-top: 13px;
-}
-.contacts .contacts-right .second .right-side {
-  line-height: 20px;
-}
-.contacts .small {
-  font-size: 13px;
-  color: #212529;
-}
-.contacts .contacts-right .second .left-side {
-  padding-top: 11px;
-  line-height: 12px;
-}
-.right-side .text {
-  font-size: 18px;
-  color: #444649;
-}
-.right-side .small,
-.box .small,
-.box-left .small {
-  font-size: 14px;
-}
-
 /* footer */
 
 footer {
   margin-top: -16px;
+  padding: 20px 0;
 }
 footer .text-center a {
   margin-right: 7px;
@@ -1413,13 +1326,6 @@ aside .square a:hover,
   .contacts .contacts-right .second .left-side {
     padding-right: 20px;
   }
-  form {
-    width: 100%;
-  }
-  form button {
-    width: 100%;
-    margin-bottom: 20px;
-  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -1603,23 +1509,30 @@ aside .square a:hover,
 
   /* header */
   .header {
-    padding-right: 0;
-    padding-top: 60px;
-  }
-  .header button {
-    width: 130px;
+    padding: 0;
     margin-bottom: 20px;
-    margin-top: 20px;
+  }
+
+  .header .big {
+    font-size: 30px;
   }
   .header .text {
     line-height: 20px;
     padding-top: 10px;
+    font-size: 18px;
   }
 
   .back-button {
     padding: 10px 0;
   }
+  .LI-profile-badge--big {
+    display: none;
+  }
 
+  .LI-profile-badge--small {
+    display: block;
+    width: 90%;
+  }
   /* aside */
 
   aside .square {

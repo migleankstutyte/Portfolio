@@ -1,0 +1,48 @@
+@import 'colors';
+
+body {
+  background: $background;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: auto;z
+
+  .container-custom {
+    padding: 0 20px;
+
+    &--main {
+      margin: 40px 0;
+    }
+  }
+
+  .container {
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--column {
+      flex-direction: column;
+    }
+
+    &--align-start {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    &--align-normal {
+      align-items: normal;
+    }
+
+    &--block {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 850px) { 
+  body .container--flex-column {
+    flex-direction: column;
+  } 
+}

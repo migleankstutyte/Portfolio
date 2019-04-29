@@ -1,0 +1,57 @@
+@import 'colors';
+@import 'media-queries';
+@import 'mixin';
+
+.newsletter {
+  box-shadow: 1px 1px 0 rgba(223, 223, 223, 0.5);
+  border-radius: 0 0 4px 4px;
+  background-color: $white;
+  margin: 20px 0;
+
+  &__border {
+    height: 8px;
+    border-radius: 4px 4px 0 0;
+    background-image: linear-gradient(to right, #da00c5 0%, #450ab5 100%);
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px;
+
+    @include lg {
+      padding: 10px;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    $text-color: $almost-black;
+
+    color: $text-color;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin: 0;
+
+    @include lg {
+      padding-bottom: 10px;
+    }
+
+    @include md {
+      padding-bottom: 0;
+    }
+
+    span {
+      font-style: italic;
+    }
+  }
+
+  &__button {
+    font-size: 16px;
+    min-height: 50px;
+    min-width: 180px;
+  }
+}

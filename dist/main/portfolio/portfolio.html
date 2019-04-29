@@ -4,56 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="/dist/main/css/style.min.css" />
     <title>Miglė Ankštutytė - Portfolio</title>
   </head>
   <body class="projects-body">
-    <button class="back-button" onclick="goBackMain()" type="button" aria-label="Back to the previous page">
-        <i class="fas fa-angle-left fa-3x"></i>
-    </button>      
+    <button
+      class="back-button"
+      onclick="goBackMain()"
+      type="button"
+      aria-label="Back to the previous page"
+    >
+      <i class="fas fa-angle-left fa-3x"></i>
+    </button>
     <h1>PROJECTS</h1>
     <div class="projects">
       <div class="projects__item">
-        <img src="./counter/counter.jpg" alt="Counter" class="image"/>
+        <img src="./LRT-tiesiogiai/LRT-tiesiogiai.jpg" alt="LRT-tiesiogiai" class="image" />
         <div class="projects__item-top">
-            <div class="text">Christmas counter</div>
-            <div class="technology">Pure Javascript</div>
+          <div class="text">LRT tiesiogiai</div>
+          <div class="technology">REST API, React.js, Node.js, Express.js</div>
+        </div>
+        <div class="projects__item-bottom">
+          <div class="project-button">
+            <a href="https://lrt-tiesiogiai.herokuapp.com/">Visit</a>
           </div>
-          <div class="projects__item-bottom">
-            <div class="project-button">
-                <a href="./counter/counter.html">Peržiūrėti</a>
-            </div>  
-          </div>
+        </div>
       </div>
       <div class="projects__item">
-        <img src="./flags/flags.jpg" alt="Flags" class="image"/>
+        <img src="./BMI-calculator/BMI-calculator.jpg" alt="BMI-calculator" class="image" />
         <div class="projects__item-top">
-            <div class="text">Flags</div>
-            <div class="technology">Pure Javascript</div>
+          <div class="text">BMI calculator</div>
+          <div class="technology">React.js, SASS</div>
+        </div>
+        <div class="projects__item-bottom">
+          <div class="project-button">
+            <a href="https://calculate-your-bmi.herokuapp.com/">Visit</a>
           </div>
-          <div class="projects__item-bottom">
-            <div class="project-button">
-                <a href="./flags/flags.html">Peržiūrėti</a>
-            </div>              
-          </div>
+        </div>
       </div>
       <div class="projects__item">
-        <img src="./game/game.jpg" alt="Game" class="image"/>
+        <img src="./BEM-page/BEM-page.jpg" alt="BEM-page" class="image" />
         <div class="projects__item-top">
-            <div class="text">Game</div>
-            <div class="technology">Pure Javascript</div>
+          <div class="text">Task</div>
+          <div class="technology">HTML, BEM, SASS</div>
+        </div>
+        <div class="projects__item-bottom">
+          <div class="project-button">
+            <a href="./BEM-page/index.html">Visit</a>
           </div>
-          <div class="projects__item-bottom">
-            <div class="project-button">
-                <a href="./game/game.html">Peržiūrėti</a>
-            </div>
+        </div>
+      </div>      
+      <div class="projects__item">
+        <img src="./flags/flags.jpg" alt="Flags" class="image" />
+        <div class="projects__item-top">
+          <div class="text">Flags</div>
+          <div class="technology">Pure Javascript</div>
+        </div>
+        <div class="projects__item-bottom">
+          <div class="project-button">
+            <a href="./flags/flags.html">Visit</a>
           </div>
-      </div>
+        </div>
+      </div>      
     </div>
-    <button onclick="topFunction()" id="myBtn" class="toTopButton" title="Go to top">
-        <i class="fas fa-angle-up fa-3x"></i>
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      class="toTopButton"
+      title="Go to top"
+    >
+      <i class="fas fa-angle-up fa-3x"></i>
     </button>
     <script src="portfolio.js"></script>
   </body>

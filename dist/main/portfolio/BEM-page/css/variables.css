@@ -1,0 +1,30 @@
+body {
+  background: #f5f5f5;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: auto; }
+  body .container-custom {
+    padding: 0 20px; }
+    body .container-custom--main {
+      margin: 40px 0; }
+  body .container {
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    body .container--column {
+      flex-direction: column; }
+    body .container--align-start {
+      align-items: flex-start; }
+    body .container--align-normal {
+      align-items: normal; }
+    body .container--block {
+      display: block; 
+    }
+    @media (max-width: 850px) { 
+      body .container--flex-column {
+        flex-direction: column;
+      } 
+    }

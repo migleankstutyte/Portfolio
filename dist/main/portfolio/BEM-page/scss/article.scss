@@ -1,0 +1,108 @@
+@import 'colors';
+
+main {
+  flex: 0 0 66%;
+
+  article {
+    $text-color: $dark-grey;
+    $border-shadow-color: $shadow-grey;
+
+    background-color: $white;
+    color: $text-color;
+    padding: 20px;
+    line-height: 21px;
+    box-shadow: 1px 1px 0 $border-shadow-color;
+    border-radius: 4px;
+
+    .article-header {
+      &__title {
+        $title-color: $almost-black;
+
+        color: $title-color;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36px;
+        margin: 4px 0 2px 0;
+      }
+    }
+
+    .article-body {
+      &__title {
+        padding: 10px 0;
+        margin: 0;
+        font-weight: 400;
+      }
+
+      &__text {
+        padding: 10px 0;
+        margin: 0;
+      }
+
+      &__double {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+
+
+        &-column {
+          margin: 0;
+          flex: 0 0 49%;
+
+          &--right {
+            line-height: initial;
+          }
+        }
+      }
+    }
+
+    .article-quote {
+      $quote-background-color: $accent-grey;
+      $quote-text-color: $dark-brown;
+
+      background-color: $quote-background-color;
+      color: $quote-text-color;
+      padding: 40px 40px 40px 20px;
+      margin: 10px 0 10px -40px;
+      border-radius: 4px 4px 4px 0;
+      position: relative;
+      display: flex;
+
+      &__quotes-mark {
+        $quote-text-color: $dark-grey;
+
+        color: $quote-text-color;
+        font-family: Georgia;
+        font-size: 82px;
+        line-height: 82px;
+        margin: -15px 20px 0 0;
+      }
+
+      &__text {
+        margin: 0 0 10px 7px;
+      }
+
+      &__author {
+        font-size: 16px;
+        margin: 0;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 0px;
+        height: 0px;
+        border-top: 10px solid #c0c0c0;
+        border-left: 19px solid transparent;
+      }
+    }
+
+    .article-footer {
+      padding-top: 10px;
+      margin: 0;
+    }
+  }
+}
+
+

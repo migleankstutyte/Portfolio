@@ -1,0 +1,168 @@
+@import 'colors';
+@import 'media-queries';
+@import 'mixin';
+
+.cards {
+  padding: 20px 0;
+
+  @include md {
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+  }
+
+  .card {
+    flex: 0 0 32%;
+    max-width: 360px;
+    box-sizing: border-box;
+    min-height: 208px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @include md {
+      flex: 0;
+      min-height: 215px;
+      max-width: none;
+      padding: 0;
+      align-items: center;
+      padding: 0 60px;
+      text-align: center;
+    }
+
+    @include sm {
+      padding: 0px;
+    }
+
+    &__title {
+      $card-title-color: $almost-black;
+
+      color: $card-title-color;
+      font-size: 24px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 20px 0;
+
+      @include lg {
+        font-size: 16px;
+      }
+
+      @include md {
+        min-height: 30px;
+      }
+    }
+
+    hr {
+      width: 40px;
+      height: 3px;
+      background-image: linear-gradient(to right, #da00c5 0%, #450ab5 100%);
+      background-repeat: no-repeat;
+      margin: 0;
+    }
+
+    &__description {
+      $card-description-color: $dark-brown;
+
+      color: $card-description-color;
+      line-height: 24px;
+      margin: 20px 0;
+    }
+
+    &__button {
+      min-width: 180px;
+    }
+
+    &--white {
+      box-shadow: 1px 1px 0 $shadow-grey;
+      background-color: $white;
+      padding: 20px;
+
+      &__title {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 33px;
+        text-transform: initial;
+        margin: 0;
+
+        @include lg {
+          font-size: 16px;
+          line-height: 1;
+        }
+
+        @include md {
+          min-height: 30px;
+        }
+      }
+
+      .opacity {
+        position: relative;
+        margin-bottom: 0;
+
+        &:after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          content: "";
+          background: linear-gradient(to top,
+                  rgba(255, 255, 255, 1) 20%,
+                  rgba(255, 255, 255, 0) 80%
+          );
+          pointer-events: none; /* so the text is still selectable */
+        }
+      }
+
+      &__link {
+        position: absolute;
+        bottom: 35px;
+
+        a {
+          color: $light-purple;
+        }
+      }
+    }
+
+    &--black {
+      $card-background-color: $accent-black;
+
+      box-shadow: 1px 1px 0 $shadow-grey;
+      background-color: $card-background-color;
+      padding: 20px;
+
+      &__title {
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $white;
+        margin: 0;
+
+        @include lg {
+          font-size: 16px;
+        }
+
+        @include md {
+          min-height: 30px;
+        }
+      }
+
+      hr {
+        margin: 20px 0;
+        border: 1px solid transparent;
+      }
+
+      &__description {
+        font-size: 16px;
+        line-height: 24px;
+        color: $white;
+
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

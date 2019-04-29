@@ -1,0 +1,55 @@
+@import 'colors';
+@import 'media-queries';
+@import 'mixin';
+
+.header-container {
+  background-image: linear-gradient(to right, #da00c5 0%, #450ab5 100%);
+  color: $white;
+
+  .header-section {
+    min-height: 420px;
+    justify-content: center;
+    text-align: center;
+
+    &__title {
+      text-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+      font-size: 64px;
+      font-weight: 700;
+      padding-top: 50px;
+      margin: 0;
+      line-height: 1;
+      margin-bottom: 30px;
+
+      @include md {
+        font-size: 40px;
+      }
+    }
+
+    &__description {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    &__buttons {
+      margin: 50px 0;
+    }
+
+    &__button {
+      $white-button-text-color: $dark-brown;
+
+      background-color: $white;
+      color: $white-button-text-color;
+      border: 1px solid $white;
+      min-width: 160px;
+      margin: 0 10px 10px;
+
+      &--transparent {
+        background-color: transparent;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+
