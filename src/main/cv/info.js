@@ -89,6 +89,41 @@ const coursesArr = [{
   href: "https://www.udemy.com/react-redux/",
   name: "Modern React with Redux [2019 Update]",
   duration: "47.5 hours"
+},
+{
+  date: "2019.05.15",
+  title: "IBM internal",
+  name: "Introduction to SQL",
+  href: "",
+  duration: "3 hours"
+},
+{
+  date: "2019.05.23",
+  title: "IBM internal",
+  href: "",
+  name: "Build Your Own Chatbot",
+  duration: "6 hours"
+},
+{
+  date: "2019.06.12",
+  title: "Udemy",
+  href: "https://www.udemy.com/course/java-tutorial/learn/lecture/172757?start=0#overview",
+  name: "Java Tutorial for Complete Beginners",
+  duration: "16 hours"
+},
+{
+  date: "2019.06.15",
+  title: "Udemy",
+  href: "https://www.udemy.com/course/introduction-to-game-development-with-unity/",
+  name: "Introduction to Game Development with Unity",
+  duration: "2 hours"
+},
+{
+  date: "2019.06.16",
+  title: "Udemy",
+  href: "https://www.udemy.com/course/node-js-api-tutorial/",
+  name: "Node JS API Development for Beginners",
+  duration: "3 hours"
 }
 ]
 
@@ -179,7 +214,35 @@ const eventsArr = [{
 {
   date: "2019.01.29",
   title: "Meetup #30: Getting your first job in IT"
-}
+},
+{
+  date: "2019.05.22",
+  title: "Meetup #33: Leadership"
+},
+{
+  date: "2019.06.06",
+  title: "Paskaita #1: Intro to UX and Research"
+},
+{
+  date: "2019.06.13",
+  title: "Paskaita #2: From Research to Ideation and Prototyping"
+},
+{
+  date: "2019.06.20",
+  title: "Design Thinking Training and Workshop"
+},
+{
+  date: "2019.06.20",
+  title: "Paskaita #3: Intro to UI Principles and Design Tools"
+},
+{
+  date: "2019.06.27",
+  title: "Paskaita #4: Responsive Design, Native Apps, Design Sytems"
+},
+{
+  date: "2019.07.04",
+  title: "Paskaita #5: Career Path for Designers"
+},
 ]
 
 function renderEventsList () {

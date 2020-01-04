@@ -20,10 +20,6 @@ let jsonSRC = 'src/json/**/*';
 let jsonDIST = './dist/json/';
 let jsonWatch = 'src/json/**/*';
 
-let folderSRC = 'src/main/**/*';
-let folderDIST = './dist/main/';
-let folderWatch = 'src/main/**/*';
-
 gulp.task('style', function(done){
     gulp.src(styleSRC)
         .pipe(sourcemaps.init())
@@ -60,20 +56,13 @@ gulp.task('json', function(done) {
         done()
 });
 
-gulp.task('folder', function(done) {
-    gulp.src(folderSRC)
-        .pipe(gulp.dest(folderDIST))
-        done()
-});
-
 gulp.task('watch', function() {
     gulp.watch(styleWatch, gulp.series('style'));
     gulp.watch(jsWatch, gulp.series('js'));
     gulp.watch(imagesWatch, gulp.series('images'));
     gulp.watch(jsonWatch, gulp.series('json'));
-    gulp.watch(folderWatch, gulp.series('folder'));
 });
 
 gulp.task('default', 
-    gulp.series('style', 'js', 'images', 'json', 'folder','watch')
+    gulp.series('style', 'js', 'images', 'json','watch')
 );

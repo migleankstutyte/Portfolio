@@ -114,7 +114,7 @@
     }
 
     &__info {
-        height: 30px;
+        height: 29px;
         padding-top: 15px;            
         text-transform: uppercase;
         background-color: $contacts-background-color;
@@ -176,5 +176,17 @@
             left: 15%;
         }
     }
+    .contacts {
+        &__info {
+            height: 40px;
+        }
+        &__info-hidden {
+            padding-top: 21px;
+        }
+        .slided {
+            height: 90px;
+        }
+    } 
+
 }
 }
